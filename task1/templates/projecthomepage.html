@@ -1,0 +1,46 @@
+{% extends 'projectNavbar.html' %}
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project Home Page</title>
+</head>
+<body>
+{% block body%}
+<div>
+    <br>
+<h1 align="center">
+    Start a day with a Delicious foodd..
+</h1>
+    <div class="card-group">
+  <div class="card">
+    <img src="{% static 'images/breakfast.jpg' %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">BREAKFAST</h5>
+      <p class="card-text">“Say Yes to a healthy diet!”</p>
+      <p class="card-text"><small class="text-body-secondary">Last updated 8 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="{% static 'images/food.jpg' %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">LUNCH</h5>
+      <p class="card-text">“Eat to your heart’s content”</p>
+      <p class="card-text"><small class="text-body-secondary">Last updated 6 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="{% static 'images/desert.jpeg' %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">DESERTS</h5>
+      <p class="card-text">“Eat what you want, when you want”</p>
+      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+</div>
+</div>
+{% endblock %}
+
+</body>
+</html>
